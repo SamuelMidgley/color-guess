@@ -7,7 +7,7 @@
   let idx = randInt(2)
   let randomColors = getColorList(correctCount)
 
-  const guessColor = (guessIdx) => {
+  const guessColor = (guessIdx: number) => {
     firstGuess = false
     if (idx === guessIdx) {
       correctCount++
@@ -47,7 +47,7 @@
   }
 
   .message {
-    color: #888;
+    color: #999;
   }
 
   .button-container {
